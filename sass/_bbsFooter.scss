@@ -1,0 +1,14 @@
+/*---- 底部 ----*/
+footer{overflow:hidden;height:auto;}
+.botNav{
+        overflow:hidden;height:auto;background:#2f2f2f;position:fixed;bottom:0;left:0;width:100%;
+        li{
+          width:33%;float:left;height:px2rem(100);background:#333;text-align:center;margin-top:px2rem(8);
+          &:nth-last-child{width:34%;}
+            a{display:block;color:#fff;font:px2rem(26)/px2rem(40) $font;
+              i{
+               font:px2rem(40)/px2rem(40) $font;margin-top:px2rem(8);display:block;
+               }       
+             }
+           }
+        }

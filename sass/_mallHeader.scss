@@ -1,0 +1,10 @@
+/*---- 头部 ----*/ 
+ .Header{
+        height:px2rem(88);position:relative;color:#fff;background-color:#fff;padding:px2rem(20) px2rem(24) 0;
+        h1{
+           font:px2rem(28)/px2rem(54) "\5FAE\8F6F\96C5\9ED1";color:#fff;width:px2rem(320);height:px2rem(54);background:url(../images/logoMall.png) no-repeat left center;background-size:contain;text-indent:-999px;float:left;outline:none; 
+          }
+    }
+#headIcon{position:absolute;right:px2rem(24);top:0.5rem;font-size:1.2rem;color:#666;} 
+    
+     

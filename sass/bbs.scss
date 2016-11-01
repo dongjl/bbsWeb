@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import '_px2rem';
+@import '_variables';
+@import '_bbsHeader';
+@import '_bbsFooter';
+$designWidth : 750;
+body{
+  width: 16rem;
+  margin: 0 auto;
+  background:#f7f7f7;
+  padding-bottom:px2rem(120);
+}          
+/*---- 论坛案例 ----*/
+.bbsMain{
+            height:auto;overflow:hidden;padding-top:px2rem(24);background:#fff;
+            h2{
+                font:px2rem(32)/px2rem(52) $font;color:#4C4C4C;padding:0 px2rem(24) px2rem(24);border-bottom:$border;
+              }
+         }
+.bbsTitle{height:auto;overflow:hidden;margin:px2rem(16) px2rem(24);}
+.bbsPeo{
+          padding:px2rem(20) 0;height:auto;overflow:hidden;position:relative;
+          .bbsPic{
+                    overflow:hidden;@include wh(px2rem(80),px2rem(80));display:block;float:left;
+                    img{width:100%;height:auto;}
+                 }
+          .bbsSex{display:block;font:px2rem(30)/px2rem(46) $font;color:#4C4C4C;float:left;margin-left:px2rem(10);}
+          time{font:px2rem(24)/px2rem(30) $font;color:#999;position:absolute;left:px2rem(90);top:px2rem(70);}
+          .bbsMaster{display:block;@include wh(px2rem(80),px2rem(46));border:1px solid #286bce;@include border-radius(px2rem(4));font:px2rem(24)/px2rem(46) $font;color:#286bce;position:absolute;right:0;top:px2rem(20);text-align:center;}
+        }
+.bbsText{
+          height:auto;overflow:hidden;
+          li{height:auto;font:px2rem(24)/px2rem(50) $font;color:#666;width:100%;float:left;}
+        }
+.bbsImg{
+          height:auto;overflow:hidden;margin-top:px2rem(30);text-align:center;
+          img{width:100%;height:auto;margin:px2rem(30) 0;}
+          p{font:px2rem(24)/px2rem(40) $font;color:#666;margin:px2rem(30) 0;}
+       }
+/*---- 论坛案例内容页 ----*/
+.pageText{
+            height:auto;overflow:hidden;margin-top:px2rem(10);
+            p{font:px2rem(24)/px2rem(40) $font;color:#666;}
+
+         }
+        .pageCase{
+            height:auto;overflow:hidden;
+            strong{color:#4C4C4C;font:px2rem(26)/px2rem(40) $font;margin-top:px2rem(20);float:left;}
+            p{font:px2rem(24)/px2rem(40) $font;color:#666;float:left;}
+          }
+/*---- 论坛案例列表页 ----*/
+.blistMain{
+             height:auto;overflow:hidden;margin-top:px2rem(20);background:#fff;padding:0 px2rem(24);
+             h2{font:px2rem(28)/px2rem(60) $font;color:#4C4C4C;border-bottom:$border;}
+           }
+.Shuttle{
+          font:px2rem(26)/px2rem(52) $font;color:#666;margin-top:px2rem(12);padding:px2rem(28) 0;
+          select{
+                  @include wh(px2rem(200),px2rem(50));margin-left:px2rem(24);background:#fff;padding-left:px2rem(16);@include border-radius(px2rem(6));font:px2rem(24)/px2rem(50) $font;color:#666;border:1px solid #333;overflow:hidden;
+                  option{font-size:px2rem(8);}
+                }
+        }
+.citySelect{
+              height:auto;overflow:hidden;margin:0 0 px2rem(30);
+              label{font:px2rem(26)/px2rem(30) $font;color:#4C4C4C;}
+              select{
+                      padding-left:px2rem(8);@include wh(px2rem(132),px2rem(48));overflow:hidden;border:1px solid #333;@include border-radius(4px);font:px2rem(26)/px2rem(48) $font;
+                      option{font-size:px2rem(8);}                    
+                    }
+              input{@include wh(px2rem(120),px2rem(48));background:url(../images/search.jpg) no-repeat scroll center center;background-size:contain;border:none;vertical-align:px2rem(-14);}
+       }
+.postMain{height:auto;overflow:hidden;margin-top:px2rem(30);}
+.tabTitle{height:px2rem(60);overflow:hidden;background:#fff;font-size:0;}
+.tabTitle a{display:inline-block;color:#4c4c4c;font:px2rem(28)/px2rem(60) $font;width:px2rem(187);text-align:center;}
+.tabTitle .on{border-bottom:4px solid #72A2EE;line-height:px2rem(56);}
+.bstMain{height:auto;overflow:hidden;background:#fff;margin-top:px2rem(20);}
+.bbsList{height:auto;overflow:hidden;}
+.bbsList li{ 
+                height:px2rem(132);overflow:hidden;border-bottom:$border;margin:0 px2rem(24) 0 px2rem(40);position:relative;padding:px2rem(24) 0 px2rem(24) px2rem(100);
+                h3{
+                    font:px2rem(24)/px2rem(30) $font;color:#4C4C4C;
+                  }
+                .tabImg{
+                        display:block;
+                        img{position:absolute;display:block;left:0;top:px2rem(30);@include wh(px2rem(78),px2rem(78));}
+                       }
+                .tabText{font:px2rem(24)/px2rem(40) $font;color:#4C4C4C;display:block;}
+                p{
+                    font:px2rem(24)/px2rem(50) $font;color:#4C4C4C;
+                    time{font:px2rem(22)/px2rem(32) $font;color:#999;}
+                 }
+               span{
+                     display:block;font:px2rem(24)/px2rem(30) $font;color:#bbb;position:absolute;bottom:px2rem(26);right:0;
+                     i{font-size:px2rem(40);margin-right:px2rem(4);vertical-align:px2rem(-6);}
+                   }
+              }
+.showMore{@include wh(px2rem(214),px2rem(60));font:px2rem(26)/px2rem(60) $font;color:#666;@include border-radius(px2rem(30));background:#f4f4f4;border:$border;display:block;margin:px2rem(40) auto;text-align:center;}
+/*---- 投稿文章列表页 ----*/
+.postMain{background:#F7F7F7;height:auto;overflow:hidden;}
+.mainHeader{
+            padding:px2rem(34) px2rem(20);height:auto;overflow:hidden;position:relative;
+            .postTitle{font:px2rem(24)/px2rem(50) $font;color:#4C4C4C;}
+            .postNum{font:px2rem(24)/px2rem(50) $font;color:#888;margin-right:px2rem(12);}
+           }
+.Contribute{
+             background:#72a2ee;@include border-radius(px2rem(32));text-align:center;font:px2rem(22)/px2rem(50) $font;color:#fff;display:block;@include wh(px2rem(170),px2rem(50));position:absolute;right:px2rem(44);top:px2rem(40);
+             i{font-size:px2rem(24);margin-right:px2rem(6);}
+           
+           }
+.textTitle{height:px2rem(60);overflow:hidden;background:#fff;font-size:0;}
+.textTitle a{display:inline-block;color:#4c4c4c;font:px2rem(28)/px2rem(60) $font;width:px2rem(180);text-align:center;}
+.textTitle .cur{background:#72A2EE;color:#fff;}
+.textTitle .cur a{ display:block;color:#fff; /* 修复Android 4.0.x 默认浏览器当前样色无效果bug */}
+.textList{height:auto;width:100%;overflow:hidden;background:#fff;}
+.textList ul{height:auto;overflow:hidden;display:none;}
+.textList ul li{ 
+                height:px2rem(116);overflow:hidden;border-top:$border;margin:0 px2rem(24) px2rem(24) px2rem(40);position:relative;padding:px2rem(24) 0 0 2.5rem;
+                h3{
+                    font:px2rem(24)/px2rem(24) $font;color:#4C4C4C;
+                    i{color:#8eafe3;font-size:px2rem(26);margin-right:px2rem(8);} 
+                  }
+                .textImg{
+                        display:block;
+                        img{position:absolute;display:block;left:0;top:px2rem(30);@include wh(px2rem(78),px2rem(78));}
+                       }
+                .textText{font:px2rem(24)/px2rem(40) $font;color:#4C4C4C;display:block;}
+                .textTip{color:#e66464;line-height:px2rem(28);}
+                p{
+                    font:px2rem(24)/px2rem(40) $font;color:#4C4C4C;
+                    time{font:px2rem(22)/px2rem(32) $font;color:#999;}
+                 }
+                  span{
+                     display:block;font:px2rem(24)/px2rem(30) $font;color:#bbb;position:absolute;bottom:px2rem(16);right:0;
+                     i{font-size:px2rem(40);margin-right:px2rem(4);vertical-align:px2rem(-6);}
+                   }
+          }
+ /*---- 论坛发帖页 ----*/         
+.postTitle{
+            height:auto;overflow:hidden;position:relative;
+            i{font-size:px2rem(40);position:absolute;right:0;top:px2rem(10);color:#c5c5c5;}
+          }
+.postText{
+            height:px2rem(70);background:#e8e8e8;padding:0 px2rem(24);font:px2rem(28)/px2rem(70) $font;color:#999;
+            em{color:#4C4C4C;}
+         }
+.postInput{
+            padding:px2rem(10) px2rem(24);height:auto;overflow:hidden;
+            li{
+                margin-top:px2rem(22);height:auto;overflow:hidden;
+                label{font:px2rem(26)/px2rem(74) $font;color:#999;float:left;}
+                input[ name="textInput"]{width:100%;height:px2rem(68);border:$border;padding-left:px2rem(20);@include border-radius(px2rem(6));color:#666;}
+                input[placeholder]{font:px2rem(26)/px2rem(68) $font;color:#999;}
+                textarea{width:100%;min-height:px2rem(150);font-size:px2rem(26);color:#999;border:$border;float:left;}
+                input[ name="switch"]{width:px2rem(280);height:px2rem(70);border:$border;padding-left:px2rem(12);@include border-radius(px2rem(6));float:left;}
+                .postCode{
+                            width:px2rem(178);height:px2rem(72);overflow:hidden;display:inline-block;margin:0 px2rem(16);float:left;
+                            img{width:100%;height:auto;}
+                         }
+                .postIn{color:#598ad7;font:px2rem(26)/px2rem(26) $font;}
+                input[type="button"]{width:px2rem(180);height:px2rem(60);background:#4184ee;float:right;margin:px2rem(30) 0;border:none;@include border-radius(px2rem(30));text-align:center;font:px2rem(26)/px2rem(60) $font;color:#fff;}
+              }
+      }
